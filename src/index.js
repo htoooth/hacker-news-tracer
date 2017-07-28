@@ -14,11 +14,17 @@ async function main() {
   let items = extract(html)
   let render = require('./type/' + fileType)
 
-  console.log('hackernews file', file)
-  console.log('readme file', readmeFile)
+  try {
+    write(file, render(title, items))
+  } catch (err) {
+    console.log('hackernews', file, err)
+  }
 
-  write(file, render(title, items))
-  readme(readmeFile, `### [${title}](./md/${path.basename(file)}) \n`)
+  try {
+    readme(readmeFile, `### [${title}](./md/${path.basename(file)}) \n`)
+  } catch(err) {
+    console.log('readme', readmeFile, err);
+  }
 }
 
 main()
