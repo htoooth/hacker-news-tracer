@@ -3,7 +3,8 @@ const path = require('path')
 const request = require('./request')
 const extract = require('./extract')
 const write = require('./write')
-const { url: hackerUrl, file } = require('./constants')
+const readme = require('./readme')
+const { url: hackerUrl, file, readme: readmeFile } = require('./constants')
 
 const fileType = path.extname(file).slice(1)
 const title = path.basename(file).split('.')[0]
@@ -13,6 +14,7 @@ async function main() {
   let items = extract(html)
   let render = require('./type/' + fileType)
   write(file, render(title, items))
+  readme(readmeFile, `### [${title}](./md/${path.basename(file)}) \n`)
 }
 
 main()
