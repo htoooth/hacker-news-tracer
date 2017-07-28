@@ -15,19 +15,20 @@ async function main() {
   let items = extract(html)
   let render = require('./type/' + fileType)
 
+  console.log('start create', file)
   try {
     write(file, render(title, items))
   } catch (err) {
     console.log('hackernews', file, err)
+    throw err
   }
 
-  let result = fs.readFileSync(file, {encoding: 'UTF-8'})
-  console.log(result);
-
+  console.log('start append', readmeFile)
   try {
     readme(readmeFile, `### [${title}](./md/${path.basename(file)}) \n`)
   } catch(err) {
     console.log('readme', readmeFile, err);
+    throw err
   }
 }
 

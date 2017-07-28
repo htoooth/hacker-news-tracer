@@ -2,9 +2,9 @@
 const fs = require('fs')
 
 function write(file, data) {
-  return fs.writeFileSync(file, data, {
-    flag: fs.constants.O_APPEND
-  })
+  let readyData = fs.readSync(file)
+  readyData += data
+  return fs.writeFileSync(file, readyData)
 }
 
 module.exports = write
