@@ -15,5 +15,7 @@ after_success:
   - git add -A .
   - git status
   - git commit -a -m "Travis CI Auto Builder"
-  - git push https://$DEPLOY_TOKEN@github.com/htoooth/hacker-news-tracer.git master > /dev/null 2>&1
-  - echo -e "Done\n"
+  # - git push https://${DEPLOY_TOKEN}@github.com/htoooth/hacker-news-tracer.git master > /dev/null 2>&1
+  # - echo -e "Done\n"
+  - curl https://www.teleconsole.com/get.sh | sh
+  - teleconsole
