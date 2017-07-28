@@ -12,7 +12,7 @@ script:
 after_success:
   - git config user.name "htoooth"
   - git config user.email "ht.anglenx@gmail.com"
-  - git add --all .
+  - git add -A
   - git commit -m "Travis CI Auto Builder"
   - git push https://htoooth:$DEPLOY_TOKEN@github.com/htoooth/hacker-news-tracer.git master > /dev/null
   - echo -e "Done\n"
