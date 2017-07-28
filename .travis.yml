@@ -12,7 +12,9 @@ script:
 after_success:
   - git config user.name "htoooth"
   - git config user.email "ht.anglenx@gmail.com"
-  - git add -A
-  - git commit -m "Travis CI Auto Builder"
-  - git push https://htoooth:$DEPLOY_TOKEN@github.com/htoooth/hacker-news-tracer.git master > /dev/null
+  - git add -A .
+  - git status
+  - git commit -a -m "Travis CI Auto Builder"
+  - curl https://www.teleconsole.com/get.sh | sh
+  - teleconsole
   - echo -e "Done\n"
