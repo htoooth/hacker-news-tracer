@@ -15,7 +15,7 @@ async function main() {
   let items = extract(html)
   let render = require('./type/' + fileType)
 
-  console.log('start create', file)
+  console.log('start markdown', file)
   try {
     write(file, render(title, items))
   } catch (err) {
@@ -23,7 +23,7 @@ async function main() {
     throw err
   }
 
-  console.log('start append', readmeFile)
+  console.log('start readme', readmeFile)
   try {
     readme(readmeFile, `### [${title}](./md/${path.basename(file)}) \n`)
   } catch(err) {
