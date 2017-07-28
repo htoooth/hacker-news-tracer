@@ -3,7 +3,7 @@ function genTitle(title) {
   return `# ${title}`
 }
 
-function genItem(item)  {
+function genItem(item) {
   return `${item.index + 1}. [${item.text}](${item.link})`
 }
 

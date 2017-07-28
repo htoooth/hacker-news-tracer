@@ -1,4 +1,7 @@
 const cheerio = require('cheerio')
+const url = require('url')
+
+const { url: hackerUrl } = require('./constants')
 
 function extract(html) {
   let $ = cheerio.load(html)
@@ -9,6 +12,11 @@ function extract(html) {
     let $title = $this.find('.title a')
     let link = $title.attr('href')
     let text = $title.text()
+
+    let urlObj = url.parse(link)
+    if (!(urlObj.protocol === 'http' || urlObj.protocol === 'https')) {
+      link = hackerUrl + link
+    }
 
     return {
       index: i,
