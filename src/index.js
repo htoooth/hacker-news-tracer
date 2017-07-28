@@ -1,4 +1,5 @@
 const path = require('path')
+const fs = require('fs')
 
 const request = require('./request')
 const extract = require('./extract')
@@ -19,6 +20,9 @@ async function main() {
   } catch (err) {
     console.log('hackernews', file, err)
   }
+
+  let result = fs.readFileSync(file, {encoding: 'UTF-8'})
+  console.log(result);
 
   try {
     readme(readmeFile, `### [${title}](./md/${path.basename(file)}) \n`)
