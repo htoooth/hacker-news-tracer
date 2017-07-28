@@ -13,6 +13,10 @@ async function main() {
   let { text: html } = await request(hackerUrl)
   let items = extract(html)
   let render = require('./type/' + fileType)
+
+  console.log('hackernews file', file)
+  console.log('readme file', readmeFile)
+
   write(file, render(title, items))
   readme(readmeFile, `### [${title}](./md/${path.basename(file)}) \n`)
 }
