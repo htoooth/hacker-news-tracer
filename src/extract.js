@@ -14,7 +14,7 @@ function extract(html) {
     let text = $title.text()
 
     let urlObj = url.parse(link)
-    if (!(urlObj.protocol === 'http' || urlObj.protocol === 'https')) {
+    if (!(urlObj.protocol === 'http:' || urlObj.protocol === 'https:')) {
       link = hackerUrl + link
     }
 
