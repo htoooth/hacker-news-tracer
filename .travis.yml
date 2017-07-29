@@ -6,18 +6,22 @@ cache:
   directories:
     - node_modules
 before_install:
-    - npm install
-    - git checkout master
+  - npm install
+
+before_script:
+  - git config user.name "htoooth"
+  - git config user.email "ht.anglenx@gmail.com"
+  - git remote rm origin
+  - git remote add origin https://htoooth:${DEPLOY_TOKEN}@github.com/htoooth/hacker-news-tracer.git
+  - git checkout master
 script:
   - npm test
 after_success:
-  - git config user.name "htoooth"
-  - git config user.email "ht.anglenx@gmail.com"
   - git add -A .
   - git status
   - git commit -a -m "Travis CI Auto Builder"
-  # - git push https://$DEPLOY_TOKEN@github.com/htoooth/hacker-news-tracer.git master
-  # - echo -e "Done\n"
+  - git push origin master
+  - echo -e "Done\n"
   # - git push https://htoooth:380f5a5cf5d481974958be5c044fe2b95933b43c@github.com/htoooth/hacker-news-tracer.git master
-  - curl https://www.teleconsole.com/get.sh | sh
-  - teleconsole
+  # - curl https://www.teleconsole.com/get.sh | sh
+  # - teleconsole
