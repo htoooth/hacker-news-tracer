@@ -6,7 +6,3 @@ A tool that gather automatically [hackernews](https://news.ycombinator.com/)'s l
 
 ## List
 
-### [2017-07-28](./md/2017-07-28.md) 
-### [2017-07-28](./md/2017-07-28.md) 
-### [2017-07-28](./md/2017-07-28.md) 
-### [2017-07-28](./md/2017-07-28.md) 
