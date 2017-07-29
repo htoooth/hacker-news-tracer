@@ -1,8 +1,8 @@
-# Hacker-news tracer
+# Hacker News Tracer
 
 [![Build Status](https://travis-ci.org/htoooth/hacker-news-tracer.svg?branch=master)](https://travis-ci.org/htoooth/hacker-news-tracer)
 
-A tool that gather automatically [hackernews](https://news.ycombinator.com/)'s latest news everyday.
+There is A tool that can gather automatically [hackernews](https://news.ycombinator.com/)'s latest news everyday.
 
 ## List
 
