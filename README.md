@@ -80,3 +80,4 @@ There is A tool that can gather automatically [hackernews](https://news.ycombina
 ### [2017-10-09](./md/2017-10-09.md) 
 ### [2017-10-10](./md/2017-10-10.md) 
 ### [2017-10-11](./md/2017-10-11.md) 
+### [2017-10-12](./md/2017-10-12.md) 
