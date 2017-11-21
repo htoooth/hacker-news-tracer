@@ -120,3 +120,4 @@ There is A tool that can gather automatically [hackernews](https://news.ycombina
 ### [2017-11-18](./md/2017-11-18.md) 
 ### [2017-11-19](./md/2017-11-19.md) 
 ### [2017-11-20](./md/2017-11-20.md) 
+### [2017-11-21](./md/2017-11-21.md) 
