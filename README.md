@@ -322,3 +322,4 @@ There is A tool that can gather automatically [hackernews](https://news.ycombina
 ### [2018-06-11](./md/2018-06-11.md) 
 ### [2018-06-12](./md/2018-06-12.md) 
 ### [2018-06-13](./md/2018-06-13.md) 
+### [2018-06-14](./md/2018-06-14.md) 
