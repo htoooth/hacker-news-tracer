@@ -333,3 +333,4 @@ There is A tool that can gather automatically [hackernews](https://news.ycombina
 ### [2018-06-22](./md/2018-06-22.md) 
 ### [2018-06-23](./md/2018-06-23.md) 
 ### [2018-06-24](./md/2018-06-24.md) 
+### [2018-06-25](./md/2018-06-25.md) 
