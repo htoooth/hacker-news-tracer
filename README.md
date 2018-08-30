@@ -398,3 +398,4 @@ There is A tool that can gather automatically [hackernews](https://news.ycombina
 ### [2018-08-27](./md/2018-08-27.md) 
 ### [2018-08-28](./md/2018-08-28.md) 
 ### [2018-08-29](./md/2018-08-29.md) 
+### [2018-08-30](./md/2018-08-30.md) 
