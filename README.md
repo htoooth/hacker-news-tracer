@@ -453,3 +453,4 @@ There is A tool that can gather automatically [hackernews](https://news.ycombina
 ### [2018-10-21](./md/2018-10-21.md) 
 ### [2018-10-22](./md/2018-10-22.md) 
 ### [2018-10-23](./md/2018-10-23.md) 
+### [2018-10-24](./md/2018-10-24.md) 
