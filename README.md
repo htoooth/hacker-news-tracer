@@ -485,3 +485,4 @@ There is A tool that can gather automatically [hackernews](https://news.ycombina
 ### [2018-11-22](./md/2018-11-22.md) 
 ### [2018-11-23](./md/2018-11-23.md) 
 ### [2018-11-24](./md/2018-11-24.md) 
+### [2018-11-25](./md/2018-11-25.md) 
